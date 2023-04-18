@@ -42,10 +42,16 @@ const MovieDetails = () => {
 
       <MovieInfo movieData={movieData} />
       <Box>
-        <MoveeLinkStyled to="cast" state={{ from: location.state.from }}>
+        <MoveeLinkStyled
+          to="cast"
+          state={{ from: location.state?.from ?? '/' }}
+        >
           cast
         </MoveeLinkStyled>
-        <MoveeLinkStyled to="reviews" state={{ from: location.state.from }}>
+        <MoveeLinkStyled
+          to="reviews"
+          state={{ from: location.state?.from ?? '/' }}
+        >
           reviews
         </MoveeLinkStyled>
       </Box>
