@@ -16,13 +16,18 @@ const Cast = () => {
       {cast && !!cast.length ? (
         <ListCast>
           {cast.map(actor => (
-            <li key={actor.id}>
+            <li className="list_item" key={actor.id}>
               <img
-                src={BASE_IMG_URL + actor.profile_path}
+                className="imag_list"
+                src={
+                  actor.profile_path
+                    ? `https://image.tmdb.org/t/p/original/${actor.profile_path}`
+                    : 'https://mir-s3-cdn-cf.behance.net/projects/404/8a3e45124050039.Y3JvcCw4MDgsNjMyLDAsMA.png'
+                }
                 alt={actor.name}
-                width="150"
+                width="300"
               />
-              <p>{actor.name}</p>
+              <p className="actor_name">{actor.name}</p>
             </li>
           ))}
         </ListCast>

@@ -24,7 +24,7 @@ p {
 }
 
 ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -37,4 +37,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.list_item {
+  padding-top: 50px;
+
+}
+
+.imag_list {
+  width: 280px;
+  height: 400px;
+}
+
+.actor_name {
+  padding-top: 20px;
 }
