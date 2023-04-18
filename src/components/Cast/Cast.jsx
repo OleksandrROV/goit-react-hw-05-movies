@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCastInfo } from 'servises/apiServis';
-import { BASE_IMG_URL } from 'servises/constans';
+// import { BASE_IMG_URL } from 'servises/constans';
 import { ListCast } from './Cast.styled';
 
 const Cast = () => {
